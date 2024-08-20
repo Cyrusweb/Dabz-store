@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabz clothing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Dabz Clothing Store</h1>
+        <div class="logo" ><img src="images/ball.jpg" alt=""></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Cart <span id="cart-count">0</span></a>
+            
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <h2>Men's T-Shirt</h2>
+            <img src="images/bag.jpg" alt="Men's T-Shirt">
+            <p>$25.00</p>
+            <button onclick="addToCart('Men\'s T-Shirt', 25)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>socks</h2>
+            <img src="images/cola.jpg" alt="Women's Dress">
+            <p>$45.00</p>
+            <button onclick="addToCart('Women\'s Dress', 45)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Women's Dress</h2>
+            <img src="images/bat.jpg" alt="Women's Dress">
+            <p>$45.00</p>
+            <button onclick="addToCart('Women\'s Dress', 45)">Add to Cart</button>
+        </div>  
+          <div class="product">
+            <h2>top</h2>
+            <img src="images/cat.jpg" alt="Women's Dress">
+            <p>$45.00</p>
+            <button onclick="addToCart('Women\'s Dress', 45)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>T-Shirt</h2>
+            <img src="images/GOAT.jpg" alt="Women's Dress">
+            <p>$45.00</p>
+            <button onclick="addToCart('Women\'s Dress', 45)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>socks</h2>
+            <img src="images/mAN.jpg" alt="Women's Dress">
+            <p>$45.00</p>
+            <button onclick="addToCart('Women\'s Dress', 45)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>sweat hoodie</h2>
+            <img src="images/main.jpg" alt="Women's Dress">
+            <p>$45.00</p>
+            <button onclick="addToCart('Women\'s Dress', 45)">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <section class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+    <footer class="back" >
+        <h4>&copy;Dabz clothing store all rights reserved,
+             design by cyrus web</h4>
+        
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
